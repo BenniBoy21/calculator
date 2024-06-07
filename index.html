@@ -1,0 +1,75 @@
+<!DOCTYPE html!>
+<html>
+	<head>
+		<title>tau</title>
+		<script>
+			function addTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1+num2;
+			}
+			function subTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1-num2;
+			}
+			function multTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1*num2;
+			}
+			function divTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1/num2;
+			}
+			function potTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1 ** num2;
+			}
+			function rootTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num2 ** (1/num1);
+			}
+			function avgTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1+num2)/2;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>funwithcalculating</h1>
+			<form>
+				<label for="fnumber">First number:</label>
+				<input type="text" id="fnumber" name="fnumber"><br><br>
+				<label for="snumber">Second number:</label>
+				<input type="text" id="snumber" name="snumber"><br><br>
+			</form>
+		<button onclick="addTwoNumbers()">
+		add
+		</button>
+		<button onclick="subTwoNumbers()">
+		sub
+		</button>
+		<button onclick="multTwoNumbers()">
+		mult
+		</button>
+		<button onclick="divTwoNumbers()">
+		div
+		</button>
+		<button onclick="potTwoNumbers()">
+		pot
+		</button>
+		<button onclick="rootTwoNumbers()">
+		root
+		</button>
+		<button onclick="avgTwoNumbers()">
+		avg
+		</button>
+		<p id="result">
+		</p>
+	</body>
+</html>
